@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentEventLogger.SampleApi", "PaymentEventLogger.SampleApi\PaymentEventLogger.SampleApi.csproj", "{39F09745-44D9-435F-858D-D03F86995135}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentEventLogger.Core", "PaymentEventLogger.Core\PaymentEventLogger.Core.csproj", "{C6A09B8A-FC29-4C2B-A01D-2137921C6650}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentEventLogger.SqlServer", "PaymentEventLogger.SqlServer\PaymentEventLogger.SqlServer.csproj", "{4BA930A3-9CA7-4572-AB1C-16489B5606D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39F09745-44D9-435F-858D-D03F86995135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39F09745-44D9-435F-858D-D03F86995135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39F09745-44D9-435F-858D-D03F86995135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39F09745-44D9-435F-858D-D03F86995135}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6A09B8A-FC29-4C2B-A01D-2137921C6650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6A09B8A-FC29-4C2B-A01D-2137921C6650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6A09B8A-FC29-4C2B-A01D-2137921C6650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6A09B8A-FC29-4C2B-A01D-2137921C6650}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BA930A3-9CA7-4572-AB1C-16489B5606D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA930A3-9CA7-4572-AB1C-16489B5606D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BA930A3-9CA7-4572-AB1C-16489B5606D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA930A3-9CA7-4572-AB1C-16489B5606D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
