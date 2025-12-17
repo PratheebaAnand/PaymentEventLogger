@@ -1,6 +1,12 @@
+
+using PaymentEventLogger.Core;
+using PaymentEventLogger.SqlServer.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+string connectionString = "Server=(localdb)\\MSSQLLocalDB;Database=PaymentEventLoggerDb;Trusted_Connection=True;";
+builder.Services.AddSingleton<IPaymentEventLogger>(new SqlPaymentEventLogger(connectionString));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

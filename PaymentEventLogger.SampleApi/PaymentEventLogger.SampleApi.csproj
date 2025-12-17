@@ -10,4 +10,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PaymentEventLogger.Core\PaymentEventLogger.Core.csproj" />
+    <ProjectReference Include="..\PaymentEventLogger.SqlServer\PaymentEventLogger.SqlServer.csproj" />
+  </ItemGroup>
+
 </Project>
