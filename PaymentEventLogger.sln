@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35506.116 d17.12
+VisualStudioVersion = 17.12.35506.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentEventLogger.SampleApi", "PaymentEventLogger.SampleApi\PaymentEventLogger.SampleApi.csproj", "{39F09745-44D9-435F-858D-D03F86995135}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentEventLogger.Core", "PaymentEventLogger.Core\PaymentEventLogger.Core.csproj", "{C6A09B8A-FC29-4C2B-A01D-2137921C6650}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentEventLogger.SqlServer", "PaymentEventLogger.SqlServer\PaymentEventLogger.SqlServer.csproj", "{4BA930A3-9CA7-4572-AB1C-16489B5606D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E23589B3-2F20-4757-84BD-E93AFCD9EE30}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.txt = LICENSE.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
