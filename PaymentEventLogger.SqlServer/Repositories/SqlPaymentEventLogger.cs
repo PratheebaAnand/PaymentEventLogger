@@ -1,11 +1,11 @@
 ﻿using Dapper;
+using PaymentEventLogger.Core;
 using System.Data;
 using System.Data.SqlClient;
-using PaymentEventLogger.Core;
 
 namespace PaymentEventLogger.SqlServer.Repositories
 {
-        public class SqlPaymentEventLogger : IPaymentEventLogger
+    public class SqlPaymentEventLogger : IPaymentEventLogger
         {
             private readonly string _connectionString;
 
