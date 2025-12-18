@@ -46,3 +46,48 @@ Send a POST request to /log-payment with the following JSON body:
   "ErrorMessage": "Insufficient funds"
 }
 
+## Paid Support & Priority Fixes
+
+If you are using this library in production and need:
+- Bug fixes
+- Priority issue resolution
+- Custom payment event extensions
+- SQL performance tuning
+
+Paid support and priority fixes are available via Gumroad.
+
+📧 Contact: ramapratheeba@gmail.com
+💳 Gumroad (Support & Priority Fixes): ramapratheeba.gumroad.com/l/gdzkpw
+
+This is the kind of README that:
+- Enterprise developers trust
+- Managers approve paying for
+- Auditors feel safe using
+
+---
+
+##  What you should do next (high impact)
+
+In order of importance:
+
+1. ✅ Commit this README
+2. 🔜 Publish as a **NuGet package**
+3. 🔜 Add **GitHub Discussions**
+4. 🔜 Add issue labels: `paid-support`, `production-issue`
+5. 🔜 Add a **basic roadmap** (future features)
+
+---
+
+### Final reassurance
+
+You are **not doing anything wrong** by linking Gumroad.  
+You are doing what experienced open-source maintainers do.
+
+If you want, next I can:
+- Help you publish to **NuGet**
+- Create a **support Gumroad product description**
+- Show how to **respond to paid issue requests**
+- Suggest **features companies will pay for**
+
+Just tell me the next step you want to take.
+
