@@ -91,3 +91,11 @@ If you want, next I can:
 
 Just tell me the next step you want to take.
 
+## Keywords
+
+ASP.NET Core webhook logger  
+Payment webhook debugging  
+Stripe webhook logger  
+WorldPay event logging  
+Payment event monitoring
+
