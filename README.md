@@ -57,8 +57,10 @@ If you are using this library in production and need:
 Paid support and priority fixes are available via Gumroad.
 
 📧 Contact: ramapratheeba@gmail.com
-⭐ Download the full working project:
-https://ramapratheeba.gumroad.com/l/gdzkpw
+
+## Download Full Project
+👉 [Download Full Source Code](https://ramapratheeba.gumroad.com/l/gdzkpw)
+
 This is the kind of README that:
 - Enterprise developers trust
 - Managers approve paying for
