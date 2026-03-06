@@ -57,7 +57,7 @@ If you are using this library in production and need:
 Paid support and priority fixes are available via Gumroad.
 
 📧 Contact: ramapratheeba@gmail.com
-💳 Gumroad (Support & Priority Fixes): ramapratheeba.gumroad.com/l/gdzkpw
+💳 Gumroad (Support & Priority Fixes)[Download Payment Event Logger](https://ramapratheeba.gumroad.com/l/gdzkpw)
 
 This is the kind of README that:
 - Enterprise developers trust
