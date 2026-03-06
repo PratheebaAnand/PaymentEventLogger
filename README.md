@@ -1,18 +1,44 @@
-# Payment Event Logger Template
+Payment Event Logger Template
 
-This is a simple template for logging payment events using an ASP.NET Core Web API and SQL Server.
+A lightweight ASP.NET Core Web API template for logging and debugging payment webhook events.
+This project helps developers capture payment provider events and store them in SQL Server for easier debugging and monitoring.
 
-## Repository URL
-You can access the full code here: [GitHub Repository](https://github.com/PratheebaAnand/PaymentEventLogger)
+⭐ Download the complete working project:
+https://ramapratheeba.gumroad.com/l/gdzkpw
 
-## Features
-- Logs payment events (e.g., payment_failed, payment_succeeded).
-- Stores events in a SQL Server database.
+Why This Tool?
 
-## Setup Instructions
-1. Clone or download the project from [GitHub Repository](https://github.com/PratheebaAnand/PaymentEventLogger).
-2. Set up a SQL Server database and run the following SQL script:
-```sql
+When integrating payment providers like Stripe or WorldPay, debugging webhook events can be difficult.
+If something fails, it is often hard to understand:
+
+What event was received?
+What payload was sent?
+What error occurred?
+
+This template provides a simple API to log payment events so developers can easily monitor and debug payment flows.
+
+Features
+
+✔ Log payment webhook events
+✔ Store events in SQL Server
+✔ Simple REST API
+✔ Lightweight and easy to integrate
+✔ Works with any payment provider
+
+Technology Stack
+
+ASP.NET Core Web API
+
+SQL Server
+
+Dapper
+
+REST API
+
+Database Setup
+
+Create the following table in SQL Server.
+
 CREATE TABLE PaymentEvents (
     Id UNIQUEIDENTIFIER PRIMARY KEY,
     Provider NVARCHAR(50) NOT NULL,
@@ -23,20 +49,27 @@ CREATE TABLE PaymentEvents (
     ErrorMessage NVARCHAR(MAX) NULL,
     CreatedAt DATETIME2 NOT NULL DEFAULT SYSUTCDATETIME()
 );
-3. Update the connectionString in Program.cs.
+Setup Instructions
 
-## API Endpoint
+1️⃣ Clone or download the repository.
 
-The API for logging payment events can be accessed at the following endpoint:
+2️⃣ Create the database table using the SQL script above.
 
-**POST** `/log-payment`
+3️⃣ Update the connection string in Program.cs.
 
-**URL:** `https://yourdomain.com/api/PaymentEvent/log-payment`
+Example:
 
-### **Request Example:**
+string connectionString = "Server=(localdb)\\MSSQLLocalDB;Database=PaymentEventLoggerDb;Trusted_Connection=True;";
 
-Send a POST request to /log-payment with the following JSON body:
+4️⃣ Run the project.
 
+API Endpoint
+Log Payment Event
+
+POST
+
+/api/PaymentEvent/log-payment
+Example Request
 {
   "Provider": "Stripe",
   "EventType": "payment_failed",
@@ -45,59 +78,68 @@ Send a POST request to /log-payment with the following JSON body:
   "Payload": "{}",
   "ErrorMessage": "Insufficient funds"
 }
+Example Response
+Payment event logged successfully!
+Example Logged Data
+Provider	EventType	Status	ReferenceId	CreatedAt
+Stripe	payment_failed	Failed	pi_123456	2026-03-05
+WorldPay	payment_succeeded	Success	wp_567890	2026-03-05
+Use Cases
 
-## Paid Support & Priority Fixes
+This tool can be used for:
 
-If you are using this library in production and need:
-- Bug fixes
-- Priority issue resolution
-- Custom payment event extensions
-- SQL performance tuning
+Debugging payment webhook failures
 
-Paid support and priority fixes are available via Gumroad.
+Monitoring payment events
 
-📧 Contact: ramapratheeba@gmail.com
+Logging Stripe / WorldPay webhook calls
 
-## Download Full Project
-👉 [Download Full Source Code](https://ramapratheeba.gumroad.com/l/gdzkpw)
+Auditing payment activity
 
-This is the kind of README that:
-- Enterprise developers trust
-- Managers approve paying for
-- Auditors feel safe using
+Building payment dashboards
 
----
+Paid Support & Priority Fixes
 
-##  What you should do next (high impact)
+If you are using this project in production and need:
 
-In order of importance:
+Bug fixes
 
-1. ✅ Commit this README
-2. 🔜 Publish as a **NuGet package**
-3. 🔜 Add **GitHub Discussions**
-4. 🔜 Add issue labels: `paid-support`, `production-issue`
-5. 🔜 Add a **basic roadmap** (future features)
+Priority support
 
----
+Custom payment provider integrations
 
-### Final reassurance
+Performance improvements
 
-You are **not doing anything wrong** by linking Gumroad.  
-You are doing what experienced open-source maintainers do.
+You can download the complete project and receive support via Gumroad.
 
-If you want, next I can:
-- Help you publish to **NuGet**
-- Create a **support Gumroad product description**
-- Show how to **respond to paid issue requests**
-- Suggest **features companies will pay for**
+📥 Download:
+https://ramapratheeba.gumroad.com/l/gdzkpw
 
-Just tell me the next step you want to take.
+📧 Contact:
+ramapratheeba@gmail.com
 
-## Keywords
+Roadmap
 
-ASP.NET Core webhook logger  
-Payment webhook debugging  
-Stripe webhook logger  
-WorldPay event logging  
-Payment event monitoring
+Planned improvements:
+
+Payment event dashboard
+
+Event search and filtering
+
+Multiple provider support
+
+Webhook validation support
+
+Event retry mechanism
+
+Contributing
+
+Contributions are welcome.
+You can submit improvements via pull requests.
+
+License
+
+This project is provided for educational and development purposes.
+
+⭐ If you found this project useful, please consider starring the repository.
 
